@@ -1,4 +1,8 @@
 import sys
+import wkconfig
+
+# Load configuration
+config = wkconfig.LoadConfiguration()
 
 # Command line argument required: source file path
 if (len(sys.argv) < 2):
@@ -6,3 +10,4 @@ if (len(sys.argv) < 2):
     sys.exit()
 
 print("\nProcessing path: ", sys.argv[1])
+
