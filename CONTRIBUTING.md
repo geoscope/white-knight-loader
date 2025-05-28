@@ -6,7 +6,7 @@ First off, thank you for considering contributing to White Knight! We're excited
 
 I've been coding for many years, and I love building software. However, White Knight is my first venture into Python as a primary language for a project. This means that while I bring a lot of software development experience, I'm still learning the Python-specific ropes and best practices. I'm incredibly open to feedback, suggestions, and contributions that can help make this project better and more idiomatic Python. Your expertise, whether you're a seasoned Pythonista or also learning, is highly valued!
 
-## How Can I Contribute?
+## How Can You Contribute?
 
 There are many ways you can contribute to White Knight, and we appreciate all of them:
 
@@ -43,24 +43,24 @@ We love pull requests! If you're planning to contribute code, please follow thes
     ```
 4.  **Set Up Your Environment (Python Specific):**
     
-    This project uses Poetry for python version and dependency management. To get started, install Poetry using their [instructions](https://python-poetry.org/docs/).
+    This project uses Poetry for python version and dependency management. To get started, install Poetry using their [instructions](https://python-poetry.org/docs/). 
     Then go into the project directory type the following once to initialise the project:
     
     ```bash
-    poetry init
+    poetry install
     ```
+
+    The project's `pyproject.toml` file is currently set up to require Python 3.12.x installed.
     
 5.  **Make Your Changes:** Write your code and make sure to follow the coding style (see "Coding Standards" below).
 6.  **Test Your Changes:**
     * Please add tests for any new features or bug fixes.
     * Ensure all tests pass before submitting your pull request.
         ```bash
-        # (Command to run tests, e.g., pytest, python -m unittest)
         pytest
         ```
 7.  **Lint Your Code:** We aim for clean, readable code. Please lint your code before committing.
     ```bash
-    #
     black .
     ```
 8.  **Commit Your Changes:** Use clear and concise commit messages.
@@ -89,16 +89,16 @@ We love pull requests! If you're planning to contribute code, please follow thes
 ## Development Setup
 
 Beyond the Python-specific environment setup mentioned in the "Pull Requests" section:
-* Make sure you have Python 3.x installed (specify your version, e.g., Python 3.8+).
+* Make sure you have Python 3.12.x installed 
 * Git is required for version control.
+* PostgreSQL is used as the database
 
-*(Add any other specific setup instructions for your project here, e.g., database setup, API keys, etc.)*
 
 ## Code of Conduct
 
-We want to foster an open and welcoming environment. All contributors are expected to adhere to our [Code of Conduct](LINK_TO_CODE_OF_CONDUCT.md). Please read it before contributing.
+We want to foster an open and welcoming environment. All contributors are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before contributing.
 
-*(If you don't have a CODE_OF_CONDUCT.md yet, you can create one. A popular option is the Contributor Covenant: https://www.contributor-covenant.org/)*
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 ## Getting Help
 
