@@ -183,3 +183,5 @@ cython_debug/
 config.ini
 config.*.ini
 !config.sample.ini
+
+alembic.ini

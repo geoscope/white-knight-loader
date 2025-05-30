@@ -1,8 +1,13 @@
 import sys
-import wkconfig
+
+from white_knight_loader import wkconfig
 
 # Load configuration
 config = wkconfig.LoadConfiguration()
+
+if not config:
+    print("Failed to load configuration")
+    sys.exit()
 
 # Command line argument required: source file path
 if len(sys.argv) < 2:
